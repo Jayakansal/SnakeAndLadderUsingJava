@@ -16,7 +16,7 @@ public class SnakeAndLadder {
     //UC2 Rolls the die 
     static int Roll_Dice() {	
 	Random random=new Random();
-    int randomNum=random.nextInt(5)+1;
+    int randomNum=random.nextInt(6)+1;
     return randomNum;
     }
     
