@@ -1,5 +1,8 @@
-package com.java.SnakeAndLadder;
-
 public class SnakeAndLadder {
-		System.out.println("Welcome to Sanke and Ladder game");
-}
+	static final int PLAYER =1;
+	static final int STARTPOST=0;
+
+	public static void main (String[] args)
+	{
+	}
+	}
