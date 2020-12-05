@@ -1,25 +1,51 @@
 package com.java.SnakeAndLadder;
+
 import java.util.Random;
 
 public class SnakeAndLadder {
+	// UC1 snake and ladder game played with single player at position 0
+	static final int STARTPOSITION = 0;
+	static final int PLAYER = 1;
+	static Random random = new Random();
 
-	//UC1 Variable Initialized at starting Positions
-	//public static int getIntilizePosition() {
-	     static final int PLAYER=1;
-	     static final int STARTPOSTION=0;
-	     
-      public static void main(String[] args)
-	 	{
-	 		System.out.println("Welcome to the Snake And Ladder Game");
-	 	}	
+	public static void main(String[] args) {
+		System.out.println("Welcome to Snake And Ladder Game");
+		int diceNum = rollingDice();
+		System.out.println(diceNum);
+		checkPosition(diceNum);
+	}
 
-    //UC2 Rolls the die 
-    static int Roll_Dice() {	
-	Random random=new Random();
-    int randomNum=random.nextInt(5)+1;
-    return randomNum;
-    }
-    
-	
+	// UC2 rolling a dice
+	static int rollingDice() {
+		int diceNum = random.nextInt(6) + 1;
+		return diceNum;
+	}
+
+	// UC3 action no play,ladder,snake
+	static void checkPosition(int diceNum) {
+		int action = random.nextInt(3);
+		System.out.println(action);
+		int currentPosition = 0;
+
+		switch (action) {
+		case 0:
+			currentPosition = currentPosition;
+			System.out.println(currentPosition);
+			break;
+		case 1:
+			currentPosition = currentPosition + diceNum;
+			System.out.println(currentPosition);
+			break;
+		case 2:
+			if (currentPosition == 0) {
+				currentPosition = currentPosition;
+			} else {
+				currentPosition = currentPosition - diceNum;
+			}
+			System.out.println(currentPosition);
+			break;
+
+		}
+	}
 }
 
