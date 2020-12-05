@@ -4,7 +4,6 @@ import java.util.Random;
 public class SnakeAndLadder {
 
 	//UC1 Variable Initialized at starting Positions
-	//public static int getIntilizePosition() {
 	     static final int PLAYER=1;
 	     static final int STARTPOSTION=0;
 	     
