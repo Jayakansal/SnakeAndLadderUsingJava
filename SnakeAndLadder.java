@@ -23,11 +23,11 @@ public class SnakeAndLadder {
 
 	// UC3 action no play,ladder,snake
 	static void checkPosition(int diceNum) {
-		int action = random.nextInt(3);
-		System.out.println(action);
+		int move = random.nextInt(3);
+		System.out.println(move);
 		int currentPosition = 0;
 
-		switch (action) {
+		switch (move) {
 		case 0:
 			currentPosition = currentPosition;
 			System.out.println(currentPosition);
